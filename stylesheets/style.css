@@ -20,9 +20,20 @@ img {
   border: none; }
 
 #go-back-home {
-  margin: 40px 0 0; }
-  #go-back-home:hover {
-    background-image: none; }
+  margin: 40px 0 0;
+  width: 10%;
+}
+
+@media (max-width: 600px) {
+
+#go-back-home {
+  width: 30%;
+}
+  
+}
+
+#go-back-home:hover {
+  background-image: none; }
 
 .capitalize {
   text-transform: capitalize; }
@@ -41,6 +52,10 @@ img {
 
 .a-c {
   text-align: center; }
+
+.a-c h1 {
+  margin: 40px;
+}
 
 .small {
   font-size: 11px; }
@@ -79,14 +94,23 @@ header {
   text-align: center; }
 
 footer {
-  width: 100%;
-  max-width: 600px;
-  line-height: 2em;
-  margin: auto;
-  padding-bottom: 30px;
-  text-align: center; }
-  footer * {
-    color: #797979; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 80%;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: 8f8f8f;
+}
+
+footer * {
+  color: #797979; 
+}
+
+
 
 #container {
   *zoom: 1;
@@ -115,6 +139,7 @@ footer {
     #container .block:last-child {
       border-bottom: 0; }
     #container .block a.main {
+      color: #624221;
       display: inline-block;
       vertical-align: baseline;
       zoom: 1;
@@ -122,7 +147,17 @@ footer {
       *vertical-align: auto;
       padding: 2px 2px;
       margin-right: 12px;
-      margin-bottom: 6px; }
+      margin-bottom: 6px; 
+      -webkit-transition: color 0.3s;
+      -moz-transition: color 0.3s;
+      -ms-transition: color 0.3s;
+      -o-transition: color 0.3s;
+      transition: color 0.3s; }
+    #container .block a:hover {
+      color: #004A7A;
+      background-image: url(/images/line.png);
+      background-repeat: repeat-x;
+      background-position: left bottom; }
       #container .block a.main:last-of-type {
         margin-right: 0; }
     #container .block .button {
@@ -147,7 +182,7 @@ footer {
 
 a, .as-link {
   text-decoration: none;
-  color: #269;
+  color: #624221;
   line-height: 1.4em;
   display: inline-block;
   vertical-align: baseline;
@@ -160,7 +195,7 @@ a, .as-link {
   -o-transition: color 0.3s;
   transition: color 0.3s; }
   a.main, a:hover, .as-link.main, .as-link:hover {
-    color: #1d5884;
+    color: #004A7A;
     background-image: url(/images/line.png);
     background-repeat: repeat-x;
     background-position: left bottom; }
