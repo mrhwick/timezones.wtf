@@ -91,7 +91,13 @@ blockquote {
   font-style: normal !important; }
 
 header {
-  text-align: center; }
+  text-align: center; 
+}
+
+header h1 {
+  font: 55px Sans-Serif;
+  color: #7D7D7D;
+}
 
 footer {
   position: absolute;
